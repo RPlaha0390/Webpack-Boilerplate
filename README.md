@@ -13,7 +13,7 @@ To use this respository you must have ```node``` installed. If not then download
 
 ### Installing 
 
-Please following the following steps to complete installation:
+Please follow the following steps to complete installation:
 
 1. Open up your Terminal/Command Prompt window
 2. CD into the Webpack Boilerplate repository
