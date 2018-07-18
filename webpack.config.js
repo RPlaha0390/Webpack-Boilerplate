@@ -11,6 +11,9 @@ module.exports = {
     /* app: './js/index.js',*/
     css: './scss/main.scss',
   },
+  devServer: {
+    contentBase: './dist',
+  },
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
@@ -42,7 +45,8 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin('style.css'),
     new CopyWebpackPlugin([
-      {from: '../src/images', to: 'images'}
+      {from: '../src/images', to: 'images'},
+      {from: './*.html'}
     ]),
     new CleanWebpackPlugin(['dist']),
   ]

@@ -8,6 +8,8 @@
     "ie > 9"
   ],
   "scripts": {
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --open webpack --watch",
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,7 +25,9 @@
     "postcss-loader": "^2.0.8",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.0",
-    "webpack": "^3.8.1"
+    "webpack": "^3.8.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^2.9.1"
   },
   "dependencies": {}
 }
